@@ -1,0 +1,1 @@
+KEYWORDS = ["help", "bachao", "help me", "save me"]
