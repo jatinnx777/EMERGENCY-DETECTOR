@@ -2,7 +2,7 @@
 name = "vosk-emergency-detector"
 version = "0.1.0"
 description = "An AI Voice Keyword Detection System using Vosk for emergency keywords."
-authors = ["Your Name <youremail@example.com>"]
+authors = ["JATIN"]
 license = "MIT"
 
 [tool.poetry.dependencies]
