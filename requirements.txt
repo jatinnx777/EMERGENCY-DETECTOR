@@ -1,3 +1,5 @@
 vosk
 sounddevice
-playsound
+# Optional playback dependency (may fail to build on some platforms)
+# If you need `playsound`, install it separately:
+# python -m pip install playsound==1.2.2

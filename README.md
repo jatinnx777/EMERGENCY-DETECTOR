@@ -1,3 +1,51 @@
+# Emergency Detector
+
+## Requirements
+Create a virtual environment and install dependencies:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Note: `playsound` can be platform-dependent; if you need it, install separately:
+
+```powershell
+python -m pip install playsound==1.2.2
+```
+## Running
+Run tests (recommended before a demo):
+
+```powershell
+.venv\Scripts\Activate.ps1
+python -m pytest -q
+```
+
+Demo script for presentations (mock mode — no model or mic needed):
+
+```powershell
+python demo.py --mode mock
+```
+
+Live demo (requires VOSK model):
+
+1. Download a VOSK model and put it somewhere, e.g. `models/vosk-model-small`
+2. Update `config.py` to set `MODEL_PATH = "models/vosk-model-small"`
+3. Run:
+
+```powershell
+python src/main.py
+```
+## Utilities
+Download a model programmatically:
+
+```powershell
+python download_model.py --url <MODEL_TAR_GZ_URL> --target models/vosk-model-small
+```
+
+CI: A GitHub Actions workflow is included at `.github/workflows/ci.yml` which runs tests on push/PR to `main`.
 # Vosk Emergency Detector
 
 ## Overview
