@@ -27,4 +27,4 @@ class TestAudioHandler(unittest.TestCase):
         self.assertFalse(audio_handler.stream.active)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main( )
